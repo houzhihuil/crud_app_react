@@ -76,7 +76,7 @@ export default function Read() {
                         </Table.Row>
                     ))}
                 </Table.Body>
-            </Table> 
+            </Table>
         </div>
     );
 }

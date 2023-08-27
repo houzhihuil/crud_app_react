@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function Update() {
@@ -41,7 +42,7 @@ export default function Update() {
          localStorage.setItem('updateData', JSON.stringify(updatedData));
 
         // Navigate back to the "Read" page
-        navigate('/read');
+        navigate('/');
 
       });
   };
@@ -74,6 +75,7 @@ export default function Update() {
         </Form.Field>
 
         <Button onClick={updateAPIData}>Update</Button>
+        <Link to='/'> <Button>Cancel</Button> </Link> 
       </Form>
     </div>
   );

@@ -1,4 +1,5 @@
 import './App.css';
+import Index from './components/index';
 import Create from './components/create';
 import Read from './components/read';
 import Update from './components/update';
@@ -10,6 +11,7 @@ function App() {
       <div className="main">
         <h2 className="main-header">React Crud Operations</h2>
         <Routes>
+          <Route path='/' element={<Index />} />
           <Route path='/create' element={<Create />} />
           <Route path='/read' element={<Read />} />
           <Route path='/update' element={<Update />} />

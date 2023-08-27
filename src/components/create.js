@@ -35,8 +35,9 @@ export default function Create() {
                 <Link to={{ pathname: '/read'}}> 
                     <Button onClick={postData}>Submit</Button>  
                 </Link>
+                <Link to='/'> <Button>Cancel</Button> </Link> 
             </Form>
-             
+            
         </div>
     )
 }
