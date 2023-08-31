@@ -17,9 +17,8 @@ export default function Read() {
      .then(() => {
         getData();
     })
-    }
-
-    const handleClick = () => { alert("Button clicked"); }// log a message to the console
+    } 
+    
     function setDATA(id, firstName, lastName,checkbox) {
         localStorage.setItem('id', id);
         localStorage.setItem('firstName', firstName);
